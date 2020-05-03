@@ -18,13 +18,18 @@
             android:textSize="18sp"/>
         <Button
             android:id="@+id/btn_search"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:background="@mipmap/search"/>
     </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/line_bottom" />
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:fillViewport="true">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -48,13 +53,12 @@
             android:layout_weight="5"
             android:textSize="18sp"
             android:text="Recommedations"/>
-        <Button
-            android:id="@+id/btn_seeAll"
+        <TextView
+            android:id="@+id/tv_seeAll"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="See All"
             android:textSize="18sp"
-            android:textAllCaps="false"
             android:textColor="@color/blue"/>
     </LinearLayout>
         <androidx.recyclerview.widget.RecyclerView

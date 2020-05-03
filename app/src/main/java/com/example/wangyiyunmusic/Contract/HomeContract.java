@@ -1,5 +1,9 @@
 package com.example.wangyiyunmusic.Contract;
 
+import com.example.wangyiyunmusic.Class.Library;
+
+import java.util.List;
+
 public interface HomeContract {
 
     interface Prestener{
@@ -7,7 +11,7 @@ public interface HomeContract {
         void getData();
     }
     interface View{
-        void onDataGotten(String s);
-        void onBannerGotten(String s);
+        void onDataGotten(List<Library> libraries);
+        void onBannerGotten(List<Library> libraries);
     }
 }

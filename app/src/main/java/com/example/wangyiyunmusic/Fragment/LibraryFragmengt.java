@@ -41,7 +41,7 @@ public class LibraryFragmengt extends Fragment implements LibraryContract.View {
         view = inflater.inflate(R.layout.fragment_library,container,false);
         prestener.getData();
         try {
-            Thread.sleep(5000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

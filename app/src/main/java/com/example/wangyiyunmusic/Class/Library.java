@@ -22,6 +22,13 @@ public class Library {
     public Library() {
     }
 
+    public Library(long id, String libraryName, int songCount, String url) {
+        this.id = id;
+        this.libraryName = libraryName;
+        this.songCount = songCount;
+        this.url = url;
+    }
+
     public Library(long id, String singer, String libraryName, int songCount, String url, Bitmap map) {
         this.id = id;
         this.singer = singer;

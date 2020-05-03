@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:id="@+id/ll_lib">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/btn_rv_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp">
+            <TextView
+                android:id="@+id/tv_rv_library_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:maxLines="1"/>
+            <TextView
+                android:id="@+id/tv_rv_singer_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="16sp"
+                android:textColor="@color/blue"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="5dp">
+                <Button
+                    android:id="@+id/btn_rv_play"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/playlist"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:id="@+id/tv_rv_songcount_year"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"/>
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="8dp"
+                    android:background="@mipmap/dots"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/line_bottom"
+        android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>
